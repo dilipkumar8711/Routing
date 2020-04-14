@@ -1,0 +1,28 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <!-- navbar items, navbar burger... -->
+    <h2>Menu</h2>
+  </div>
+  <div class="navbar-menu">
+    <!-- navbar start, navbar end -->
+    <div class="navbar-end">
+      <a class="navbar-item" routerLink="/">
+        Dashboard
+      </a>
+      <a class="navbar-item" routerLink="/products">
+        Products
+      </a>
+      <a class="navbar-item" routerLink="/settings">
+        Settings
+      </a>
+      <a class="navbar-item" (click)="logOut()">
+        Logout
+      </a>
+    </div>
+  </div>
+</nav>
+<div class="content">
+  <section class="section">
+    <router-outlet></router-outlet>
+  </section>
+</div>
